@@ -1,42 +1,198 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root{
+  background-color: rgb(58, 78, 94);
+
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+header{
+  width: 90vw;
+  background-color: aliceblue;
+  border-radius: 20px;
+  border: 3px solid black;
+  padding: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.appContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.sideBarContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.addressInputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inputBox{
+  background-color: rgb(255, 255, 255);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: left;
+}
+
+.inputBoxGroup{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBox input{
+  background-color: rgb(210, 215, 216);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.sideBySideInput{
+  display: flex;
+}
+
+.resumeContainer {
+  width: 794px;
+  height: calc(794px * 1.4142);
+  background-color: white;
+  box-shadow: 10px 10px 10px black;
+  margin: 50px;
+  border-radius: 10px;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.resumeBody{
+  display: flex;
+  width: 794px;
+  justify-content: space-between;
+}
+
+.header{
+  background-color: rgb(44, 77, 96);
+  height: 160px;
+  color: white;
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact p{
+  margin: 5px;
+}
+
+
+.experienceContainer{
+  margin: 20px;
+}
+
+.educationContainer{
+  width: 500px;
+}
+.educationContainer p, h3, h4{
+  margin: 5px;
+}
+.workExperienceContainer{
+  margin: 5px;
+  width: 500px;
+}
+
+.work-object, .education-object{
+  background-color: rgb(179, 201, 204);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.work-object p, .education-object p{
+  margin: 0px;
+  font-weight: bold;
+}
+
+.work-object button, .education-object button{
+  border: none;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: rgb(152, 152, 178);
+  color: white;
+  height: 20px;
+  margin-left: 20px;
+}
+
+.resumeContainer h2{
+  font-size: 25px;
+}
+.resumeContainer h3 {
+  font-size: 20px;
+}
+.resumeContainer h4 {
+  font-size: 15px;
+}
+.resumeContainer p{
+  font-size: 15px;
+}
+
+.resume-work-object, .resume-education-object{
+
+}
+
+.skillsContainer{
+  margin: 20px;
+  width: 200px;
+}
+.addedSkillsContainer{
+  display: flex;
+
+}
+.individualSkill{
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  background-color: rgb(135, 165, 168);
+  border-radius: 10px;
+  padding: 5px;
+  
+}
+
+.individualSkill button{
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  color: black;
+  font-weight: 700;
+  margin-left: 5px;
+}
+.individualSkill li{
+  list-style: none;
+  margin-left: 10px;
+}
+
+.formBtn{
+  margin: 20px;
+  border: none;
+  padding: 5px;
+  background-color: rgb(133, 154, 172);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px){
+  .appContainer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .resumeContainer{
+    width: 95vw;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .inputBox{
+    width: 70vw;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
