@@ -1,6 +1,6 @@
 import PersonalDetails from "./Personal/PersonalDetails";
 import WorkExperience from "./Work/WorkExperience";
-import Education from "./Education/education";
+import Education from "./Education/Education";
 import Skills from "./Skills"
 
 function SideBar({
