@@ -4,7 +4,7 @@
 
 The following project was created as my first trial in React. The aim was the create a CV generator to assist with my understanding of components, props and hooks. I used these concepts to create a CV which takes data about yourself, you education, you work experience and skills.
 
-Live link:
+Live link: https://symphonious-croquembouche-22f73e.netlify.app
 
 ## Usage
 
